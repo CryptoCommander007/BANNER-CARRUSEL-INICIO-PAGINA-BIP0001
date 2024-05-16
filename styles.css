@@ -1,0 +1,46 @@
+/************************************************************************************************************/
+/************************************************************************************************************/
+/*******************************BANNER-CARRUSEL-INICIO-PAGINA-BIP0001 ***************************************/
+/************************************************************************************************************/
+/************************************************************************************************************/
+
+.BIP0001-container {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.BIP0001-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.BIP0001-slide-track {
+    display: flex;
+}
+
+.BIP0001-slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.BIP0001-slide img {
+    width: 100%;
+    height: 300px; /* Altura fija */
+    object-fit: cover; /* Ajustar la imagen al contenedor manteniendo la relación de aspecto */
+}
+
+/* Animation */
+.BIP0001-slide-track {
+    animation: BIP0001-slide 25s infinite;
+}
+
+@keyframes BIP0001-slide {
+    0%, 20% { transform: translateX(0%); } /* Detención */
+    25%, 45% { transform: translateX(-100%); } /* Desplazamiento rápido */
+    50%, 70% { transform: translateX(-200%); } /* Detención */
+    75%, 95% { transform: translateX(-300%); } /* Desplazamiento rápido */
+}
